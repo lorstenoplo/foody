@@ -1,7 +1,6 @@
 import React from "react";
 import { TouchableOpacity, Image, View } from "react-native";
 import {
-  BottomTabBar,
   createBottomTabNavigator,
 } from "@react-navigation/bottom-tabs";
 import tw from "tailwind-react-native-classnames";

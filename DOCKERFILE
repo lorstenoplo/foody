@@ -1,0 +1,1 @@
+RUN sudo sed -i s/1920x1080/1440x800/ /usr/bin/start-vnc-session.sh

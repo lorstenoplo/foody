@@ -1,26 +1,19 @@
 import React from "react";
 import {
-  StyleSheet,
-  Text,
-  View,
-  SafeAreaView,
-  TouchableOpacity,
-  Image,
-  FlatList,
-  Platform,
+  FlatList, Image, Platform, SafeAreaView, StyleSheet,
+  Text, TouchableOpacity, View
 } from "react-native";
-
-import {
-  categoryData,
-  restaurantData,
-  initialCurrentLocation,
-} from "../constants/dummyData";
-import { COLORS, icons, images, SIZES, FONTS } from "../constants";
 import tw from "tailwind-react-native-classnames";
 import { Header } from "../components/Home/Header";
+import { COLORS, FONTS, icons, SIZES } from "../constants";
+import {
+  categoryData,
+  restaurantData
+} from "../constants/dummyData";
+
 
 const Home = () => {
-  const [categories, setCategories] = React.useState(categoryData);
+  const [categories,] = React.useState(categoryData);
   const [selectedCategory, setSelectedCategory] = React.useState<any>(null);
   const [restaurants, setRestaurants] = React.useState(restaurantData);
 
@@ -35,7 +28,6 @@ const Home = () => {
 
   function getCategoryNameById(id: number) {
     let category = categories.filter((a) => a.id === id);
-
     if (category.length > 0) {
       return category[0].name;
     }
