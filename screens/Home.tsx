@@ -1,21 +1,29 @@
+import { useNavigation } from "@react-navigation/native";
 import React from "react";
 import {
-  FlatList, Image, Platform, SafeAreaView, StyleSheet,
-  Text, TouchableOpacity, View
+  FlatList,
+  Image,
+  Platform,
+  SafeAreaView,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
 } from "react-native";
 import tw from "tailwind-react-native-classnames";
 import { Header } from "../components/Home/Header";
 import { COLORS, FONTS, icons, SIZES } from "../constants";
 import {
   categoryData,
-  restaurantData
+  initialCurrentLocation,
+  restaurantData,
 } from "../constants/dummyData";
 
-
 const Home = () => {
-  const [categories,] = React.useState(categoryData);
+  const [categories] = React.useState(categoryData);
   const [selectedCategory, setSelectedCategory] = React.useState<any>(null);
   const [restaurants, setRestaurants] = React.useState(restaurantData);
+  const navigation = useNavigation();
 
   function onSelectCategory(item: any) {
     let restaurantList = restaurantData.filter((a) =>
@@ -104,7 +112,15 @@ const Home = () => {
 
   function RestaurantList() {
     const renderItem = ({ item }: any) => (
-      <TouchableOpacity style={{ marginBottom: SIZES.padding * 2 }}>
+      <TouchableOpacity
+        onPress={() =>
+          navigation.navigate("Restaurant", {
+            item,
+            currentLocation: initialCurrentLocation,
+          })
+        }
+        style={{ marginBottom: SIZES.padding * 2 }}
+      >
         <View style={{ marginBottom: SIZES.padding }}>
           <Image
             source={item.photo}

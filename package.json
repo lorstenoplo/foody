@@ -20,12 +20,10 @@
     "react-dom": "16.13.1",
     "react-native": "~0.63.4",
     "react-native-gesture-handler": "~1.10.2",
-    "react-native-google-places-autocomplete": "^2.3.0",
     "react-native-reanimated": "~2.2.0",
     "react-native-safe-area-context": "3.2.0",
     "react-native-screens": "~3.4.0",
     "react-native-svg": "12.1.1",
-    "react-native-tomtom-maps": "^0.0.1-alpha.2",
     "react-native-unimodules": "~0.14.5",
     "react-native-web": "^0.17.1",
     "tailwind-react-native-classnames": "^1.4.1"

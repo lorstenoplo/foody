@@ -1,5 +1,5 @@
 import React from "react";
-import { Text } from "react-native";
+import { Text, SafeAreaView } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 
@@ -30,14 +30,18 @@ const App = () => {
   }, []);
 
   if (!fontsLoaded) {
-    return <Text>Loading fonts...</Text>;
+    return (
+      <SafeAreaView>
+        <Text>Loading...</Text>
+      </SafeAreaView>
+    );
   }
 
   return (
     <NavigationContainer>
       <Stack.Navigator
         screenOptions={{ headerShown: false }}
-        initialRouteName="OrderDelivery"
+        initialRouteName="Home"
       >
         <Stack.Screen name="Home" component={Tabs} />
         <Stack.Screen name="Restaurant" component={Restaurant} />

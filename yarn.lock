@@ -5015,11 +5015,6 @@ pump@^3.0.0:
     end-of-stream "^1.1.0"
     once "^1.3.1"
 
-qs@~6.9.1:
-  version "6.9.6"
-  resolved "https://registry.yarnpkg.com/qs/-/qs-6.9.6.tgz#26ed3c8243a431b2924aca84cc90471f35d5a0ee"
-  integrity sha512-TIRk4aqYLNoJUbd+g2lEdz5kLWIuTMRagAXxl78Q0RiVjAOugHmeKNGdd3cwo/ktpf9aL9epCfFqWDEKysUlLQ==
-
 query-string@^6.13.6:
   version "6.14.1"
   resolved "https://registry.yarnpkg.com/query-string/-/query-string-6.14.1.tgz#7ac2dca46da7f309449ba0f86b1fd28255b0c86a"
@@ -5084,15 +5079,6 @@ react-native-gesture-handler@~1.10.2:
     invariant "^2.2.4"
     prop-types "^15.7.2"
 
-react-native-google-places-autocomplete@^2.3.0:
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/react-native-google-places-autocomplete/-/react-native-google-places-autocomplete-2.3.0.tgz#6ba70e078535ff28c9293d579f75b09a7905fd93"
-  integrity sha512-BuOsAMdEgeA8YO5OgLcD9NyuTxxaHiBd8zc/YUsoPTkaTUgk8zzq6TLM6rCv8PVnAqiY3bNewpSH0N5XnIJQRw==
-  dependencies:
-    lodash.debounce "^4.0.8"
-    prop-types "^15.7.2"
-    qs "~6.9.1"
-
 react-native-iphone-x-helper@^1.3.0:
   version "1.3.1"
   resolved "https://registry.yarnpkg.com/react-native-iphone-x-helper/-/react-native-iphone-x-helper-1.3.1.tgz#20c603e9a0e765fd6f97396638bdeb0e5a60b010"
@@ -5127,11 +5113,6 @@ react-native-svg@12.1.1:
   dependencies:
     css-select "^2.1.0"
     css-tree "^1.0.0-alpha.39"
-
-react-native-tomtom-maps@^0.0.1-alpha.2:
-  version "0.0.1-alpha.2"
-  resolved "https://registry.yarnpkg.com/react-native-tomtom-maps/-/react-native-tomtom-maps-0.0.1-alpha.2.tgz#30873b238b5253d89b7724caf1252cbb4fd66704"
-  integrity sha512-kyKP/sQtQAjUMfutPbc7A6v1pFowCoWRjFmfC2VQNbgF3netOndpOHZekQIsLzTlN2HDgXXtubaX19zqqjMzDQ==
 
 react-native-unimodules@~0.14.5:
   version "0.14.6"
