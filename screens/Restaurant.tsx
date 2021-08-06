@@ -362,6 +362,7 @@ const Restaurant = () => {
             onPress={() =>
               navigation.navigate("OrderDelivery", {
                 currentLocation,
+                restaurant,
               })
             }
           >
