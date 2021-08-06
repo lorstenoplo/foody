@@ -70,4 +70,7 @@ buck-out/
 .expo/
 web-build/
 
+# vs code
+.vscode/
+
 # @end expo-cli
